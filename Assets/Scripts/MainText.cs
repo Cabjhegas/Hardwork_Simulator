@@ -18,6 +18,7 @@ public class MainText : MonoBehaviour
     {
         thisCollider = GetComponent<PolygonCollider2D>();
         mainText = GetComponent<TextMeshProUGUI>();
+        mainText.text = "";
         gameManager = FindObjectOfType<GameManager>();
     }
 
@@ -106,7 +107,10 @@ public class MainText : MonoBehaviour
 
         thisCollider.points = vertices2D.ToArray();
 
+    }
 
-
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        
     }
 }
