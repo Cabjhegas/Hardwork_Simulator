@@ -75,10 +75,6 @@ public class GameManager : MonoBehaviour
 
         mainText.mainText.text = completeText.Substring(0, pressKeyCount);
 
-        if (pressKeyCount == mainText.mainText.text.Length)
-        {
-            Debug.Log("Game Over");
-        }
 
         lastLetter = mainText.mainText.text[pressKeyCount - 1].ToString();
         Debug.Log("Last letter is "+lastLetter);
@@ -118,7 +114,6 @@ public class GameManager : MonoBehaviour
 
         if (thisCharacterInfo.isVisible)
         {
-            Debug.Log(lastLetter);
             //Vector2 charMidTopLine = new Vector2((verticesOfMainText[thisCharacterInfo.vertexIndex + 0].x + verticesOfMainText[thisCharacterInfo.vertexIndex + 2].x) / 2, (thisCharacterInfo.bottomLeft.y + thisCharacterInfo.topLeft.y) / 2);
             Vector2 lastCharEnd = new Vector2(thisCharacterInfo.bottomRight.x + 2, thisCharacterInfo.baseLine);
             lastLetterPos = mainText.transform.TransformPoint(lastCharEnd);
@@ -133,8 +128,18 @@ public class GameManager : MonoBehaviour
     void ChangeStage()
     {
         currentStage++;
+        if(currentStage> gameStagesHolder.GameStagesArray.Length)
+        {
+            GameWin();
+            return;
+        }
         completeText += gameStagesHolder.GameStagesArray[currentStage].thisStageString;
         gameStagesHolder.GameStagesArray[currentStage].unityEvent.Invoke();
+    }
+
+    void GameWin()
+    {
+        Debug.Log("YOU WIN!");
     }
 
     void FireTextProjectile()
