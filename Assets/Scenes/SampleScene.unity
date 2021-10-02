@@ -674,9 +674,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54ec3c4f1e2352440afc64315ab818e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 0}
-  collider: {fileID: 0}
-  rigidbody: {fileID: 0}
+  text: {fileID: 802421866}
+  collider: {fileID: 802421870}
+  rigidbody: {fileID: 802421869}
 --- !u!50 &802421869
 Rigidbody2D:
   serializedVersion: 4
@@ -952,7 +952,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1149329068}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -5.65, z: 0}
+  m_LocalPosition: {x: 0, y: -5.44, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
