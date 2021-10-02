@@ -9,14 +9,16 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI mainText;
     public Transform textCursor;
     public ObjectPooler textProjectilePooler;
-    public Transform textShield;
+    public Transform textBottomCollider;
 
     string completeText =
-    "<b>INTRODUCTION</b><br><br><br>"
-    +"Text New TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew <b>lazy dog</b> TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew Text<br>"
-    +"Text New TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew <b>lazy dog</b> TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew Text<br>"
-    +"Text New TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew <b>lazy dog</b> TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew Text<br>"
-    +"Text New TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew <b>lazy dog</b> TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew Text<br>";
+    "<b>çkemlk;lkncw çlwmçelcmwçmec</b><br><br><br>"
+    +"cklsdnclskndlc lksdl ociwecçiuvlyucl liuwbciybulbcqwybc liwuebcibuweiubweicu iuedhKANSCD,MXBKVAEOIRVNS KSDUGCIUJSNDBNEOICN pcms~picpirine cieroiveoinoçeirov rvoienrovineoinvoienoçirvnçore oenrvçoierovniuycecbeu neo;rinvo;eirnovienovri ukecyvkuyvkycvuyvuyc cbukyercjhdbcuyerukcv jchueyrvhvs.kbjc.eubiwebc kcbweuwiebchwebc<br>"
+    + "cklsdnclskndlc lksdl ociwecçiuvlyucl liuwbciybulbcqwybc liwuebcibuweiubweicu iuedhKANSCD,MXBKVAEOIRVNS KSDUGCIUJSNDBNEOICN pcms~picpirine cieroiveoinoçeirov rvoienrovineoinvoienoçirvnçore oenrvçoierovniuycecbeu neo;rinvo;eirnovienovri ukecyvkuyvkycvuyvuyc cbukyercjhdbcuyerukcv jchueyrvhvs.kbjc.eubiwebc kcbweuwiebchwebc<br>"
+    + "cklsdnclskndlc lksdl ociwecçiuvlyucl liuwbciybulbcqwybc liwuebcibuweiubweicu iuedhKANSCD,MXBKVAEOIRVNS KSDUGCIUJSNDBNEOICN pcms~picpirine cieroiveoinoçeirov rvoienrovineoinvoienoçirvnçore oenrvçoierovniuycecbeu neo;rinvo;eirnovienovri ukecyvkuyvkycvuyvuyc cbukyercjhdbcuyerukcv jchueyrvhvs.kbjc.eubiwebc kcbweuwiebchwebc<br>"
+    + "cklsdnclskndlc lksdl ociwecçiuvlyucl liuwbciybulbcqwybc liwuebcibuweiubweicu iuedhKANSCD,MXBKVAEOIRVNS KSDUGCIUJSNDBNEOICN pcms~picpirine cieroiveoinoçeirov rvoienrovineoinvoienoçirvnçore oenrvçoierovniuycecbeu neo;rinvo;eirnovienovri ukecyvkuyvkycvuyvuyc cbukyercjhdbcuyerukcv jchueyrvhvs.kbjc.eubiwebc kcbweuwiebchwebc<br>"
+    + "cklsdnclskndlc lksdl ociwecçiuvlyucl liuwbciybulbcqwybc liwuebcibuweiubweicu iuedhKANSCD,MXBKVAEOIRVNS KSDUGCIUJSNDBNEOICN pcms~picpirine cieroiveoinoçeirov rvoienrovineoinvoienoçirvnçore oenrvçoierovniuycecbeu neo;rinvo;eirnovienovri ukecyvkuyvkycvuyvuyc cbukyercjhdbcuyerukcv jchueyrvhvs.kbjc.eubiwebc kcbweuwiebchwebc<br>"
+    + "cklsdnclskndlc lksdl ociwecçiuvlyucl liuwbciybulbcqwybc liwuebcibuweiubweicu iuedhKANSCD,MXBKVAEOIRVNS KSDUGCIUJSNDBNEOICN pcms~picpirine cieroiveoinoçeirov rvoienrovineoinvoienoçirvnçore oenrvçoierovniuycecbeu neo;rinvo;eirnovienovri ukecyvkuyvkycvuyvuyc cbukyercjhdbcuyerukcv jchueyrvhvs.kbjc.eubiwebc kcbweuwiebchwebc<br>";
 
     int pressKeyCount = 0;
 
@@ -70,8 +72,7 @@ public class GameManager : MonoBehaviour
         }
 
         lastLetter = mainText.text[pressKeyCount - 1].ToString();
-        Debug.Log(lastLetter);
-        Debug.Log(richTextFormattingInAction);
+        Debug.Log("Last letter is "+lastLetter);
 
         if (keyCountIncrement > 0)
         {
@@ -113,7 +114,7 @@ public class GameManager : MonoBehaviour
             Vector2 lastCharEnd = new Vector2(thisCharacterInfo.bottomRight.x + 2, thisCharacterInfo.baseLine);
             lastLetterPos = mainText.transform.TransformPoint(lastCharEnd);
             textCursor.position = lastLetterPos;
-            textShield.position = lastLetterPos;
+            textBottomCollider.position = lastLetterPos;
         }
 
 
