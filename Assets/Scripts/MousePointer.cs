@@ -10,7 +10,7 @@ public class MousePointer : MonoBehaviour
     void Start()
     {
         thisRigidbody = GetComponent<Rigidbody2D>();
-        ShootMousePointer();
+        //ShootMousePointer();
     }
 
     // Update is called once per frame

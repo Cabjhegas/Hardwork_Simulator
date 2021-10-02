@@ -3,23 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
+using UnityEngine.Events;
 
 public class GameManager : MonoBehaviour
 {
     MainText mainText;
+    GameStagesHolder gameStagesHolder;
     public Transform textCursor;
     public ObjectPooler textProjectilePooler;
     public Transform textBottomCollider;
+    public event Action thisAction;
+    public UnityAction UnityAction;
+    public UnityEvent UnityEvent;
+    int currentStage = -1;
 
-    string completeText =
-    "<b>çkemlk;lkncw çlwmçelcmwçmec</b><br><br><br>"
-    +"cklsdnclskndlc lksdl ociwecçiuvlyucl liuwbciybulbcqwybc liwuebcibuweiubweicu iuedhKANSCD,MXBKVAEOIRVNS KSDUGCIUJSNDBNEOICN pcms~picpirine cieroiveoinoçeirov rvoienrovineoinvoienoçirvnçore oenrvçoierovniuycecbeu neo;rinvo;eirnovienovri ukecyvkuyvkycvuyvuyc cbukyercjhdbcuyerukcv jchueyrvhvs.kbjc.eubiwebc kcbweuwiebchwebc<br>"
-    + "cklsdnclskndlc lksdl ociwecçiuvlyucl liuwbciybulbcqwybc liwuebcibuweiubweicu iuedhKANSCD,MXBKVAEOIRVNS KSDUGCIUJSNDBNEOICN pcms~picpirine cieroiveoinoçeirov rvoienrovineoinvoienoçirvnçore oenrvçoierovniuycecbeu neo;rinvo;eirnovienovri ukecyvkuyvkycvuyvuyc cbukyercjhdbcuyerukcv jchueyrvhvs.kbjc.eubiwebc kcbweuwiebchwebc<br>"
-    + "cklsdnclskndlc lksdl ociwecçiuvlyucl liuwbciybulbcqwybc liwuebcibuweiubweicu iuedhKANSCD,MXBKVAEOIRVNS KSDUGCIUJSNDBNEOICN pcms~picpirine cieroiveoinoçeirov rvoienrovineoinvoienoçirvnçore oenrvçoierovniuycecbeu neo;rinvo;eirnovienovri ukecyvkuyvkycvuyvuyc cbukyercjhdbcuyerukcv jchueyrvhvs.kbjc.eubiwebc kcbweuwiebchwebc<br>"
-    + "cklsdnclskndlc lksdl ociwecçiuvlyucl liuwbciybulbcqwybc liwuebcibuweiubweicu iuedhKANSCD,MXBKVAEOIRVNS KSDUGCIUJSNDBNEOICN pcms~picpirine cieroiveoinoçeirov rvoienrovineoinvoienoçirvnçore oenrvçoierovniuycecbeu neo;rinvo;eirnovienovri ukecyvkuyvkycvuyvuyc cbukyercjhdbcuyerukcv jchueyrvhvs.kbjc.eubiwebc kcbweuwiebchwebc<br>"
-    + "cklsdnclskndlc lksdl ociwecçiuvlyucl liuwbciybulbcqwybc liwuebcibuweiubweicu iuedhKANSCD,MXBKVAEOIRVNS KSDUGCIUJSNDBNEOICN pcms~picpirine cieroiveoinoçeirov rvoienrovineoinvoienoçirvnçore oenrvçoierovniuycecbeu neo;rinvo;eirnovienovri ukecyvkuyvkycvuyvuyc cbukyercjhdbcuyerukcv jchueyrvhvs.kbjc.eubiwebc kcbweuwiebchwebc<br>"
-    + "cklsdnclskndlc lksdl ociwecçiuvlyucl liuwbciybulbcqwybc liwuebcibuweiubweicu iuedhKANSCD,MXBKVAEOIRVNS KSDUGCIUJSNDBNEOICN pcms~picpirine cieroiveoinoçeirov rvoienrovineoinvoienoçirvnçore oenrvçoierovniuycecbeu neo;rinvo;eirnovienovri ukecyvkuyvkycvuyvuyc cbukyercjhdbcuyerukcv jchueyrvhvs.kbjc.eubiwebc kcbweuwiebchwebc<br>";
 
+    string completeText;
     int pressKeyCount = 0;
 
     Vector2 lastLetterPos;
@@ -30,6 +30,8 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         mainText = FindObjectOfType<MainText>();
+        gameStagesHolder = FindObjectOfType<GameStagesHolder>();
+        ChangeStage();
         //textProjectile.gameObject.SetActive(false);
         //UpdateMainText();
     }
@@ -63,6 +65,12 @@ public class GameManager : MonoBehaviour
         if (pressKeyCount < 0)
         {
             pressKeyCount = 0;
+        }
+
+        if(pressKeyCount> completeText.Length)
+        {
+            ChangeStage();
+            return;
         }
 
         mainText.mainText.text = completeText.Substring(0, pressKeyCount);
@@ -120,6 +128,13 @@ public class GameManager : MonoBehaviour
 
 
 
+    }
+
+    void ChangeStage()
+    {
+        currentStage++;
+        completeText += gameStagesHolder.GameStagesArray[currentStage].thisStageString;
+        gameStagesHolder.GameStagesArray[currentStage].unityEvent.Invoke();
     }
 
     void FireTextProjectile()
