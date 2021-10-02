@@ -5,12 +5,12 @@ using TMPro;
 
 public class MainText : MonoBehaviour
 {
-    TextMeshProUGUI mainText;
-    PolygonCollider2D collider;
+    public TextMeshProUGUI mainText;
+    PolygonCollider2D thisCollider;
     // Start is called before the first frame update
     void Start()
     {
-        collider = GetComponent<PolygonCollider2D>();
+        thisCollider = GetComponent<PolygonCollider2D>();
         mainText = GetComponent<TextMeshProUGUI>();
     }
 
@@ -18,7 +18,7 @@ public class MainText : MonoBehaviour
     public void UpdateCollider()
     {
         mainText.ForceMeshUpdate();
-
+        
         Vector3[] vertices = mainText.mesh.vertices;
         List<Vector2> vertices2D = new List<Vector2>();
 
@@ -31,7 +31,7 @@ public class MainText : MonoBehaviour
             
         }
 
-        collider.points = vertices2D.ToArray();
+        thisCollider.points = vertices2D.ToArray();
 
 
 

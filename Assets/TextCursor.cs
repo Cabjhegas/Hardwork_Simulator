@@ -10,7 +10,7 @@ public class TextCursor : MonoBehaviour
     void Start()
     {
         RectTransform rectTransform = GetComponent<RectTransform>();
-        rectTransform.sizeDelta = new Vector2(rectTransform.sizeDelta.x, FindObjectOfType<GameManager>().mainText.fontSize - 5);
+        rectTransform.sizeDelta = new Vector2(rectTransform.sizeDelta.x, FindObjectOfType<MainText>().mainText.fontSize - 5);
         image = GetComponent<Image>();
         float frequencyBlinking = 0.5f;
         InvokeRepeating("ToggleVisibility", frequencyBlinking, frequencyBlinking);

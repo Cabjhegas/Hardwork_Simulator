@@ -6,7 +6,7 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-    public TextMeshProUGUI mainText;
+    MainText mainText;
     public Transform textCursor;
     public ObjectPooler textProjectilePooler;
     public Transform textBottomCollider;
@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        mainText = FindObjectOfType<MainText>();
         //textProjectile.gameObject.SetActive(false);
         //UpdateMainText();
     }
@@ -64,14 +65,14 @@ public class GameManager : MonoBehaviour
             pressKeyCount = 0;
         }
 
-        mainText.text = completeText.Substring(0, pressKeyCount);
+        mainText.mainText.text = completeText.Substring(0, pressKeyCount);
 
-        if (pressKeyCount == mainText.text.Length)
+        if (pressKeyCount == mainText.mainText.text.Length)
         {
             Debug.Log("Game Over");
         }
 
-        lastLetter = mainText.text[pressKeyCount - 1].ToString();
+        lastLetter = mainText.mainText.text[pressKeyCount - 1].ToString();
         Debug.Log("Last letter is "+lastLetter);
 
         if (keyCountIncrement > 0)
@@ -102,10 +103,10 @@ public class GameManager : MonoBehaviour
         }
 
 
-        mainText.ForceMeshUpdate();
+        mainText.UpdateCollider();
 
         //Vector3[] verticesOfMainText = mainText.mesh.vertices;
-        TMP_CharacterInfo thisCharacterInfo = mainText.textInfo.characterInfo[mainText.textInfo.characterCount - 1];
+        TMP_CharacterInfo thisCharacterInfo = mainText.mainText.textInfo.characterInfo[mainText.mainText.textInfo.characterCount - 1];
 
         if (thisCharacterInfo.isVisible)
         {
@@ -139,9 +140,9 @@ public class GameManager : MonoBehaviour
         textProjectileGO.transform.rotation = transform.rotation;
         TextProjectile textProjectile = textProjectileGO.GetComponent<TextProjectile>();
         textProjectile.text.text = lastLetter;
-        textProjectile.text.fontSize = mainText.fontSize;
-        textProjectile.collider.radius = mainText.fontSize/3;
-        textProjectileGO.GetComponent<RectTransform>().sizeDelta = new Vector2(mainText.fontSize, mainText.fontSize);
+        textProjectile.text.fontSize = mainText.mainText.fontSize;
+        textProjectile.collider.radius = mainText.mainText.fontSize / 3;
+        textProjectileGO.GetComponent<RectTransform>().sizeDelta = new Vector2(mainText.mainText.fontSize, mainText.mainText.fontSize);
         textProjectileGO.SetActive(true);
         textProjectile.Fire();
         UpdateMainText(-1);
