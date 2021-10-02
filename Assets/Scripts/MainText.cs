@@ -52,7 +52,7 @@ public class MainText : MonoBehaviour
                 {
                     richTextFormattingInAction = false;
                 }
-                UpdateMainText(keyCountIncrement);
+                UpdateMainText(1);
                 return;
             }
         }
@@ -65,7 +65,7 @@ public class MainText : MonoBehaviour
                 {
                     richTextFormattingInAction = false;
                 }
-                UpdateMainText(keyCountIncrement);
+                UpdateMainText(-1);
                 return;
             }
         }
@@ -111,9 +111,14 @@ public class MainText : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        StartCoroutine(DropSomeLetters());
+    }
+
+    IEnumerator DropSomeLetters()
+    {
         int randomNumbersOfLettersToDrop = Random.Range(5, 20);
 
-        for(int i = 0; i <= randomNumbersOfLettersToDrop; i++)
+        for (int i = 0; i <= randomNumbersOfLettersToDrop; i++)
         {
             int randomCharIndex = mainText.text.Length - Random.Range(1, 60);
             if (randomCharIndex > 0)
@@ -122,8 +127,14 @@ public class MainText : MonoBehaviour
                 //mainText.text = mainText.text.Remove(0, randomCharIndex);
                 //mainText.text = mainText.text.Insert(0, " ");
 
+                string s = completeText.Remove(randomCharIndex, 0);
+                s = s.Insert(randomCharIndex, "*");
+                completeText = s;
+                UpdateMainText(0);
             }
+            yield return new WaitForSeconds(0.08f);
         }
+
         
     }
 }

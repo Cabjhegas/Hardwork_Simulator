@@ -45,7 +45,7 @@ public class GameManager : MonoBehaviour
         else if (Input.anyKeyDown)
         {
 
-            mainText.UpdateMainText(1);
+            mainText.UpdateMainText(3);
 
         }
     }
