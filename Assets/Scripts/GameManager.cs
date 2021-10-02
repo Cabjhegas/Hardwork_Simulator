@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
 
         else if (Input.GetKeyDown(KeyCode.Space))
         {
-            FireTextProjectile();
+            DropALetter(mainText.mainText.textInfo.characterCount - 1);
         }
         else if (Input.anyKeyDown)
         {
@@ -70,7 +70,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("YOU WIN!");
     }
 
-    void FireTextProjectile()
+    void DropALetter(int characterIndex)
     {
         //if(lastLetter == "")
         //{
@@ -81,16 +81,25 @@ public class GameManager : MonoBehaviour
 
         GameObject textProjectileGO = textProjectilePooler.GetPooledObject();        
 
-        textProjectileGO.transform.position = mainText.lastLetterPos;
+        textProjectileGO.transform.position = GetCharWorldPos(characterIndex);
         textProjectileGO.transform.rotation = transform.rotation;
         TextProjectile textProjectile = textProjectileGO.GetComponent<TextProjectile>();
-        textProjectile.text.text = mainText.lastLetter;
-        textProjectile.text.fontSize = mainText.mainText.fontSize;
+        textProjectile.thisText.text = mainText.mainText.text[characterIndex].ToString();
+        textProjectile.thisText.fontSize = mainText.mainText.fontSize;
         textProjectile.collider.radius = mainText.mainText.fontSize / 3;
         textProjectileGO.GetComponent<RectTransform>().sizeDelta = new Vector2(mainText.mainText.fontSize, mainText.mainText.fontSize);
         textProjectileGO.SetActive(true);
         textProjectile.Fire();
         mainText.UpdateMainText(-1);
+
+    }
+
+    Vector2 GetCharWorldPos(int characterIndex)
+    {
+        TMP_CharacterInfo thisCharacterInfo = mainText.mainText.textInfo.characterInfo[characterIndex];
+        
+        Vector2 charEnd = new Vector2(thisCharacterInfo.bottomRight.x + 2, thisCharacterInfo.baseLine);
+        return mainText.transform.TransformPoint(charEnd);
 
     }
 }

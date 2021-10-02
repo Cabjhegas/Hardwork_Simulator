@@ -6,7 +6,7 @@ using TMPro;
 
 public class TextProjectile : MonoBehaviour
 {
-    public TextMeshProUGUI text;
+    public TextMeshProUGUI thisText;
     public CircleCollider2D collider;
     public Rigidbody2D rigidbody;
     //bool isFalling;
@@ -15,6 +15,11 @@ public class TextProjectile : MonoBehaviour
     void Start()
     {
         rectTransform = GetComponent<RectTransform>();
+
+        MainText mainText = FindObjectOfType<MainText>();
+        thisText.fontSize = mainText.mainText.fontSize;
+        collider.radius = mainText.mainText.fontSize / 3;
+        GetComponent<RectTransform>().sizeDelta = new Vector2(mainText.mainText.fontSize, mainText.mainText.fontSize);
 
     }
 
