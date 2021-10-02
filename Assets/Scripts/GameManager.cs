@@ -36,6 +36,7 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Backspace))
         {
             mainText.UpdateMainText(-1);
+            mainText.UpdateMainText(-1);
         }
 
         else if (Input.GetKeyDown(KeyCode.Space))
@@ -46,7 +47,8 @@ public class GameManager : MonoBehaviour
         else if (Input.anyKeyDown)
         {
 
-            mainText.UpdateMainText(3);
+            mainText.UpdateMainText(1);
+            mainText.UpdateMainText(1);
 
         }
     }
@@ -102,6 +104,34 @@ public class GameManager : MonoBehaviour
         
         Vector2 charEnd = new Vector2(thisCharacterInfo.bottomRight.x + 2, thisCharacterInfo.baseLine);
         return mainText.transform.TransformPoint(charEnd);
+
+    }
+
+    public void ScrollMainTextUp()
+    {
+        StartCoroutine(ScrollMainTextUpRoutine());
+    }
+
+    IEnumerator ScrollMainTextUpRoutine()
+    {
+        Vector3 mainTextOriginalPos = mainText.transform.position;
+        Vector3 textCursorOriginalPos = textCursor.transform.position;
+        Vector3 mainTextBottonColliderOriginalPos = mainTextBottonCollider.transform.position;
+
+        float totalAmountToMove = 3f;
+        float timer = 0.5f;
+        float t = 0;
+        while(t<timer)
+        {
+            mainText.transform.position = mainTextOriginalPos + (Vector3.up * totalAmountToMove*t/timer);
+            textCursor.transform.position = textCursorOriginalPos + (Vector3.up * totalAmountToMove * t / timer);
+            mainTextBottonCollider.transform.position = mainTextBottonColliderOriginalPos + (Vector3.up * totalAmountToMove * t / timer);
+            t += Time.deltaTime;
+            yield return null;
+        }
+        mainText.transform.position = mainTextOriginalPos + (Vector3.up * totalAmountToMove);
+        textCursor.transform.position = textCursorOriginalPos + (Vector3.up * totalAmountToMove);
+        mainTextBottonCollider.transform.position = mainTextBottonColliderOriginalPos + (Vector3.up * totalAmountToMove);
 
     }
 }
