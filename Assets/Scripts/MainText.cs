@@ -111,6 +111,19 @@ public class MainText : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        int randomNumbersOfLettersToDrop = Random.Range(5, 20);
+
+        for(int i = 0; i <= randomNumbersOfLettersToDrop; i++)
+        {
+            int randomCharIndex = mainText.text.Length - Random.Range(1, 60);
+            if (randomCharIndex > 0)
+            {
+                gameManager.DropALetter(randomCharIndex);
+                //mainText.text = mainText.text.Remove(0, randomCharIndex);
+                //mainText.text = mainText.text.Insert(0, " ");
+
+            }
+        }
         
     }
 }

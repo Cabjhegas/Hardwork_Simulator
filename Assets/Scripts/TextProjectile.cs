@@ -32,11 +32,11 @@ public class TextProjectile : MonoBehaviour
         //}
     }
 
-    public void Fire()
-    {
-        //isFalling = true;
-        rigidbody.velocity = Vector2.zero;
-    }
+    //public void Fire()
+    //{
+    //    //isFalling = true;
+    //    rigidbody.velocity = Vector2.zero;
+    //}
 
 
 

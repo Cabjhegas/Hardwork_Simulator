@@ -40,6 +40,7 @@ public class GameManager : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Space))
         {
             DropALetter(mainText.mainText.textInfo.characterCount - 1);
+            mainText.UpdateMainText(-1);
         }
         else if (Input.anyKeyDown)
         {
@@ -70,7 +71,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("YOU WIN!");
     }
 
-    void DropALetter(int characterIndex)
+    public void DropALetter(int characterIndex)
     {
         //if(lastLetter == "")
         //{
@@ -85,12 +86,12 @@ public class GameManager : MonoBehaviour
         textProjectileGO.transform.rotation = transform.rotation;
         TextProjectile textProjectile = textProjectileGO.GetComponent<TextProjectile>();
         textProjectile.thisText.text = mainText.mainText.text[characterIndex].ToString();
-        textProjectile.thisText.fontSize = mainText.mainText.fontSize;
-        textProjectile.collider.radius = mainText.mainText.fontSize / 3;
-        textProjectileGO.GetComponent<RectTransform>().sizeDelta = new Vector2(mainText.mainText.fontSize, mainText.mainText.fontSize);
+        textProjectile.rigidbody.velocity = Vector2.zero;
+        //textProjectile.thisText.fontSize = mainText.mainText.fontSize;
+        //textProjectile.collider.radius = mainText.mainText.fontSize / 3;
+        //textProjectileGO.GetComponent<RectTransform>().sizeDelta = new Vector2(mainText.mainText.fontSize, mainText.mainText.fontSize);
         textProjectileGO.SetActive(true);
-        textProjectile.Fire();
-        mainText.UpdateMainText(-1);
+        //mainText.UpdateMainText(-1);
 
     }
 
