@@ -139,7 +139,7 @@ public class GameManager : MonoBehaviour
         TextProjectile textProjectile = textProjectileGO.GetComponent<TextProjectile>();
         textProjectile.text.text = lastLetter;
         textProjectile.text.fontSize = mainText.fontSize;
-        textProjectile.collider.size = new Vector2(mainText.fontSize-5, mainText.fontSize-5);
+        textProjectile.collider.radius = mainText.fontSize/3;
         textProjectileGO.GetComponent<RectTransform>().sizeDelta = new Vector2(mainText.fontSize, mainText.fontSize);
         textProjectileGO.SetActive(true);
         textProjectile.Fire();

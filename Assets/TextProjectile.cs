@@ -7,7 +7,7 @@ using TMPro;
 public class TextProjectile : MonoBehaviour
 {
     public TextMeshProUGUI text;
-    public BoxCollider2D collider;
+    public CircleCollider2D collider;
     public Rigidbody2D rigidbody;
     //bool isFalling;
     RectTransform rectTransform;

@@ -24,8 +24,7 @@ public class MousePointer : MonoBehaviour
         float x = Random.Range(-0.8f, 0.8f);
         float y = Random.Range(0f, 0.9f);
         Vector2 randomDirection = new Vector3(x, y).normalized;
-        float forceMultiplier = 1f;
-        Debug.LogError(randomDirection);
-        thisRigidbody.AddForce(randomDirection * forceMultiplier, ForceMode2D.Impulse);
+        float forceMultiplier = 100f;
+        thisRigidbody.AddForce(randomDirection * forceMultiplier, ForceMode2D.Force);
     }
 }
