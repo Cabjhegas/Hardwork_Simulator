@@ -14,9 +14,6 @@ public class TextProjectile : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        text = GetComponent<TextMeshProUGUI>();
-        collider = GetComponent<BoxCollider2D>();
-        rigidbody = GetComponent<Rigidbody2D>();
         rectTransform = GetComponent<RectTransform>();
 
     }
