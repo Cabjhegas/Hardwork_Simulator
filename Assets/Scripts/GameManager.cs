@@ -12,10 +12,6 @@ public class GameManager : MonoBehaviour
     GameStagesHolder gameStagesHolder;
     public Transform textCursor;
     public ObjectPooler textProjectilePooler;
-    public Transform textBottomCollider;
-    public event Action thisAction;
-    public UnityAction UnityAction;
-    public UnityEvent UnityEvent;
     int currentStage = -1;
 
 
@@ -77,7 +73,7 @@ public class GameManager : MonoBehaviour
 
 
         lastLetter = mainText.mainText.text[pressKeyCount - 1].ToString();
-        Debug.Log("Last letter is "+lastLetter);
+        //Debug.Log("Last letter is "+lastLetter);
 
         if (keyCountIncrement > 0)
         {
@@ -118,7 +114,6 @@ public class GameManager : MonoBehaviour
             Vector2 lastCharEnd = new Vector2(thisCharacterInfo.bottomRight.x + 2, thisCharacterInfo.baseLine);
             lastLetterPos = mainText.transform.TransformPoint(lastCharEnd);
             textCursor.position = lastLetterPos;
-            textBottomCollider.position = lastLetterPos;
         }
 
 
