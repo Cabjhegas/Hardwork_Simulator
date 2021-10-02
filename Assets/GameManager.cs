@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 {
     public TextMeshProUGUI mainText;
     public Transform textCursor;
-    public TextProjectile textProjectile;
+    public ObjectPooler textProjectilePooler;
     public Transform textShield;
 
     string completeText =
@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        textProjectile.gameObject.SetActive(false);
+        //textProjectile.gameObject.SetActive(false);
         //UpdateMainText();
     }
 
@@ -128,11 +128,19 @@ public class GameManager : MonoBehaviour
         //    FireTextProjectile();
         //    return;
         //}
-        textProjectile.transform.position = lastLetterPos;
+
+        GameObject textProjectileGO = textProjectilePooler.GetPooledObject();
+
+
+        
+
+        textProjectileGO.transform.position = lastLetterPos;
+        textProjectileGO.transform.rotation = transform.rotation;
+        TextProjectile textProjectile = textProjectileGO.GetComponent<TextProjectile>();
         textProjectile.text.text = lastLetter;
         textProjectile.text.fontSize = mainText.fontSize;
-        textProjectile.GetComponent<RectTransform>().sizeDelta = new Vector2(mainText.fontSize, mainText.fontSize);
-        textProjectile.gameObject.SetActive(true);
+        textProjectileGO.GetComponent<RectTransform>().sizeDelta = new Vector2(mainText.fontSize, mainText.fontSize);
+        textProjectileGO.SetActive(true);
         textProjectile.Fire();
         UpdateMainText(-1);
 
