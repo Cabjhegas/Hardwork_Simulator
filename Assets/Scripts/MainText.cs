@@ -12,11 +12,11 @@ public class MainText : MonoBehaviour
     public string lastLetter;
     bool richTextFormattingInAction;
 
-    PolygonCollider2D thisCollider;
+    //PolygonCollider2D thisCollider;
     // Start is called before the first frame update
     void Start()
     {
-        thisCollider = GetComponent<PolygonCollider2D>();
+        //thisCollider = GetComponent<PolygonCollider2D>();
         mainText = GetComponent<TextMeshProUGUI>();
         mainText.text = "";
         gameManager = FindObjectOfType<GameManager>();
@@ -71,7 +71,8 @@ public class MainText : MonoBehaviour
         }
 
 
-        UpdateCollider();
+        //UpdateCollider();
+        mainText.ForceMeshUpdate();
 
         //Vector3[] verticesOfMainText = mainText.mesh.vertices;
         TMP_CharacterInfo thisCharacterInfo = mainText.textInfo.characterInfo[mainText.textInfo.characterCount - 1];
@@ -82,6 +83,7 @@ public class MainText : MonoBehaviour
             Vector2 lastCharEnd = new Vector2(thisCharacterInfo.bottomRight.x + 2, thisCharacterInfo.baseLine);
             lastLetterPos = mainText.transform.TransformPoint(lastCharEnd);
             gameManager.textCursor.position = lastLetterPos;
+            gameManager.mainTextBottonCollider.position = new Vector2(gameManager.mainTextBottonCollider.position.x, lastLetterPos.y);
         }
 
 
@@ -89,32 +91,37 @@ public class MainText : MonoBehaviour
     }
 
     //TODO: Melhorar performance da solução abaixo. Estudar Utilities do TextMeshPro pra gerar esse collider de um jeito melhor
-    public void UpdateCollider()
-    {
-        mainText.ForceMeshUpdate();
+    //public void UpdateCollider()
+    //{
+    //    mainText.ForceMeshUpdate();
         
-        Vector3[] vertices = mainText.mesh.vertices;
-        List<Vector2> vertices2D = new List<Vector2>();
+    //    Vector3[] vertices = mainText.mesh.vertices;
+    //    List<Vector2> vertices2D = new List<Vector2>();
 
-        foreach(Vector3 v3 in vertices)
-        {
-            if(v3 != Vector3.zero)
-            {
-                vertices2D.Add(v3);
-            }
+    //    foreach(Vector3 v3 in vertices)
+    //    {
+    //        if(v3 != Vector3.zero)
+    //        {
+    //            vertices2D.Add(v3);
+    //        }
             
-        }
+    //    }
 
-        thisCollider.points = vertices2D.ToArray();
+    //    thisCollider.points = vertices2D.ToArray();
 
-    }
+    //}
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    StartCoroutine(DropSomeLetters());
+    //}
+
+    public void DropSomeLetters()
     {
-        StartCoroutine(DropSomeLetters());
+        StartCoroutine(DropSomeLettersRoutine());
     }
 
-    IEnumerator DropSomeLetters()
+    IEnumerator DropSomeLettersRoutine()
     {
         int randomNumbersOfLettersToDrop = Random.Range(5, 20);
 

@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     MainText mainText;
     GameStagesHolder gameStagesHolder;
     public Transform textCursor;
+    public Transform mainTextBottonCollider;
     public ObjectPooler textProjectilePooler;
     int currentStage = -1;
 
