@@ -14,12 +14,9 @@ public class GameManager : MonoBehaviour
     public ObjectPooler textProjectilePooler;
     int currentStage = -1;
 
+    public int pressKeyCount = 0;
 
-    string completeText;
-    int pressKeyCount = 0;
-
-    Vector2 lastLetterPos;
-    string lastLetter;
+    
 
     public Transform[] testeDosVertices;
     // Start is called before the first frame update
@@ -37,7 +34,7 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Backspace))
         {
-            UpdateMainText(-1);
+            mainText.UpdateMainText(-1);
         }
 
         else if (Input.GetKeyDown(KeyCode.Space))
@@ -47,80 +44,16 @@ public class GameManager : MonoBehaviour
         else if (Input.anyKeyDown)
         {
 
-            UpdateMainText(1);
+            mainText.UpdateMainText(1);
 
         }
     }
 
-    bool richTextFormattingInAction;
+    
 
-    void UpdateMainText(int keyCountIncrement)
-    {
-        pressKeyCount += keyCountIncrement;
+    
 
-        if (pressKeyCount < 0)
-        {
-            pressKeyCount = 0;
-        }
-
-        if(pressKeyCount> completeText.Length)
-        {
-            ChangeStage();
-            return;
-        }
-
-        mainText.mainText.text = completeText.Substring(0, pressKeyCount);
-
-
-        lastLetter = mainText.mainText.text[pressKeyCount - 1].ToString();
-        //Debug.Log("Last letter is "+lastLetter);
-
-        if (keyCountIncrement > 0)
-        {
-            if (lastLetter == "<" || richTextFormattingInAction)
-            {
-                richTextFormattingInAction = true;
-                if (lastLetter == ">")
-                {
-                    richTextFormattingInAction = false;
-                }
-                UpdateMainText(keyCountIncrement);
-                return;
-            }
-        }
-        else if (keyCountIncrement < 0)
-        {
-            if (lastLetter == ">" || richTextFormattingInAction)
-            {
-                richTextFormattingInAction = true;
-                if (lastLetter == "<")
-                {
-                    richTextFormattingInAction = false;
-                }
-                UpdateMainText(keyCountIncrement);
-                return;
-            }
-        }
-
-
-        mainText.UpdateCollider();
-
-        //Vector3[] verticesOfMainText = mainText.mesh.vertices;
-        TMP_CharacterInfo thisCharacterInfo = mainText.mainText.textInfo.characterInfo[mainText.mainText.textInfo.characterCount - 1];
-
-        if (thisCharacterInfo.isVisible)
-        {
-            //Vector2 charMidTopLine = new Vector2((verticesOfMainText[thisCharacterInfo.vertexIndex + 0].x + verticesOfMainText[thisCharacterInfo.vertexIndex + 2].x) / 2, (thisCharacterInfo.bottomLeft.y + thisCharacterInfo.topLeft.y) / 2);
-            Vector2 lastCharEnd = new Vector2(thisCharacterInfo.bottomRight.x + 2, thisCharacterInfo.baseLine);
-            lastLetterPos = mainText.transform.TransformPoint(lastCharEnd);
-            textCursor.position = lastLetterPos;
-        }
-
-
-
-    }
-
-    void ChangeStage()
+    public void ChangeStage()
     {
         currentStage++;
         if(currentStage> gameStagesHolder.GameStagesArray.Length)
@@ -128,7 +61,7 @@ public class GameManager : MonoBehaviour
             GameWin();
             return;
         }
-        completeText += gameStagesHolder.GameStagesArray[currentStage].thisStageString;
+        mainText.completeText += gameStagesHolder.GameStagesArray[currentStage].thisStageString;
         gameStagesHolder.GameStagesArray[currentStage].unityEvent.Invoke();
     }
 
@@ -146,21 +79,18 @@ public class GameManager : MonoBehaviour
         //    return;
         //}
 
-        GameObject textProjectileGO = textProjectilePooler.GetPooledObject();
+        GameObject textProjectileGO = textProjectilePooler.GetPooledObject();        
 
-
-        
-
-        textProjectileGO.transform.position = lastLetterPos;
+        textProjectileGO.transform.position = mainText.lastLetterPos;
         textProjectileGO.transform.rotation = transform.rotation;
         TextProjectile textProjectile = textProjectileGO.GetComponent<TextProjectile>();
-        textProjectile.text.text = lastLetter;
+        textProjectile.text.text = mainText.lastLetter;
         textProjectile.text.fontSize = mainText.mainText.fontSize;
         textProjectile.collider.radius = mainText.mainText.fontSize / 3;
         textProjectileGO.GetComponent<RectTransform>().sizeDelta = new Vector2(mainText.mainText.fontSize, mainText.mainText.fontSize);
         textProjectileGO.SetActive(true);
         textProjectile.Fire();
-        UpdateMainText(-1);
+        mainText.UpdateMainText(-1);
 
     }
 }

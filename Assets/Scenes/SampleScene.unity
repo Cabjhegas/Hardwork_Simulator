@@ -205,10 +205,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textCursor: {fileID: 1409515773}
   textProjectilePooler: {fileID: 77079443}
-  textBottomCollider: {fileID: 1310943626}
-  UnityEvent:
-    m_PersistentCalls:
-      m_Calls: []
   testeDosVertices: []
 --- !u!4 &103352824
 Transform:
@@ -837,7 +833,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
       propertyPath: thisStageString
-      value: 'Continuando outro
+      value: '
+
+        Continuando outro
 
         wjnejcbe;cb
 
@@ -852,7 +850,9 @@ PrefabInstance:
 
 
 
-        ljcbewkjbckuwbeciubwiuecwuebcouwbevcluevcl.kbdkjbcwebcuw'
+        ljcbewkjbckuwbeciubwiuecwuebcouwbevcluevcl.kbdkjbcwebcuw
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
       propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1624,12 +1624,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
       propertyPath: thisStageString
-      value: 'jckjecejrc
+      value: '
+
+        jckjecejrc
 
         kcrlkcnelrcnlekrnlernclkenclknerlkcnelkrcnlekrnclekrcn4
 
         Terminou
-        o teste do STage 1'
+        o teste do STage 1
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 4192861629535347162, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
       propertyPath: m_Name
