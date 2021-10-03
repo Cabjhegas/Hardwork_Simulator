@@ -22,9 +22,9 @@ public class GameManager : MonoBehaviour
 
     public int pressKeyCount = 0;
     int lettersDropedCount = 0;
-    int lettersDropedCountWarning = 50;
+    int lettersDropedCountWarning = 200;
     bool alreadyWarned;
-    int lettersDropedCountGameOver = 60;
+    int lettersDropedCountGameOver = 300;
     bool gameOver;
 
     bool dropLetterAllowed;

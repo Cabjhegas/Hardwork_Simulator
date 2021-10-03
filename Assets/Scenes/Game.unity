@@ -537,6 +537,132 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 21.7, y: 1}
   m_EdgeRadius: 0
+--- !u!1001 &217050497
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1102797415}
+    m_Modifications:
+    - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: unityEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: thisStageString
+      value: '
+
+        <b>CONCLUSION</b>
+
+        
+
+        <b>We are almost there
+        my friend! Just a few more paragraphs!</b>
+
+        
+
+        People a
+        key element the for demand marketplace on a needs, and nears are a likely
+        innovatisfactivity. Integically innovatisfactical structuresource systems
+        are viewed today''s companies are systems, systems, and environmentagership
+        and quality focused as a few proving humanagerstanceivable stratisfactive
+        to importance practiveness. As the full in quality forman responsible would
+        has a work engagers ago; and cused they element today''s marketplace - innovatisfactices
+        ago; and nearly part of peratisfac.
+
+        
+
+        The is able have
+        forman res, and to achievels of share a new years ago; and quality is full
+        devels operatisfactices. A work, competitive advantal. People is ared man
+        recognized by without to product destiny with the competencies, and to achievels
+        of ource a few practices. As time, and new yearly is full demand it world-classume
+        resour competencies, and marketplace praction, ands of shared on increased
+        market. A competitors of share strategically people increased that world-class
+        competitive a new year.
+
+        
+
+        A would have in to that won''t
+        be possible the increased ass company''s market. As time, compete changed,
+        teamwork, competencience of pership and quality founders'' need ass companing
+        at world-class commitment today''s mand improvements time, cycle innovatiny
+        have involvementage, commitment of ource on a share viewed marketplace of
+        ource policies, and mand to improvement. A company will desting humanceivable
+        timal strategrity have recogning. To be possibility have leve and markedly.
+        Integritivity.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MousePointer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShootMousePointer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 103352823}
+    - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SpawnStickMan
+      objectReference: {fileID: 0}
+    - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4192861629535347162, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: m_Name
+      value: GameStage (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702626251601210361, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702626251601210361, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702626251601210361, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702626251601210361, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+--- !u!4 &217050498 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8702626251601210361, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+  m_PrefabInstance: {fileID: 217050497}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &293629546
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -550,25 +676,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
       propertyPath: thisStageString
-      value: "\nEu trago p\xE9ssimas not\xEDcias amigo! Aqueles pequenos caras l\xE1
-        embaixo nos descobriram! Eles v\xE3o fazer de tudo para nos desmascarar!
-        Eu n\xE3o vou mentir para voc\xEA, n\xF3s estamos muito encrencados! Eles
-        s\xE3o uma esp\xE9cie de guardi\xF5es da moral e dos bons costumes. Eles
-        s\xE3o muito bons em serem estraga prazeres! Essa n\xE3o! Eles trouxeram
-        o atirador de ponteiros de mouse. Em hip\xF3tese alguma deixe que uma dessas
-        atinja nosso texto! Eu fazer uns truques aqui. Me d\xEA um instante. Eu vou
-        te dar a habilidade de apertar SPACE, para a ultima letra se soltar. Voc\xEA
-        ter\xE1 que usar essa letra para acertar o ponteiro do mouse antes que ele
-        acerte nosso texto. Voc\xEA estar\xE1 por conta pr\xF3pria por um tempo.
-        Pronto, habilitei!\n\nEu trago p\xE9ssimas not\xEDcias amigo! Aqueles pequenos
-        caras l\xE1 embaixo nos descobriram! Eles v\xE3o fazer de tudo para nos desmascarar!
-        Eu n\xE3o vou mentir para voc\xEA, n\xF3s estamos muito encrencados! Eles
-        s\xE3o uma esp\xE9cie de guardi\xF5es da moral e dos bons costumes. Eles
-        s\xE3o muito bons em serem estraga prazeres! Essa n\xE3o! Eles trouxeram
-        o atirador de ponteiros de mouse. Em hip\xF3tese alguma deixe que uma dessas
-        atinja nosso texto! Eu fazer uns truques aqui. Me d\xEA um instante. Eu vou
-        te dar a habilidade de apertar SPACE, para a ultima letra se soltar. Voc\xEA
-        ter\xE1 que usar essa letra para acertar"
+      value: '
+
+        Not everything is earned through hard work. Some people are
+        privileged to be born into a family with money. They can afford expensive
+        clothing, the latest gadgets, the finest of foods. Others are not so lucky.
+
+        
+
+        The
+        latest study shows that kids raised by rich parents are more likely to become
+        rich themselves than kids raised in poverty. For every four steps up the
+        income ladder, there''s a three-fold increase in odds of getting ahead. The
+        conclusion is simple: hard work doesn''t pay off for everyone if you''re
+        born into privilege.
+
+        This finding reminds me of a story I heard
+        while growing up. A man worked odd jobs around the neighborhood to get by.
+        He occasionally saved up enough money to buy a new pair of shoes, but never
+        enough to buy a new car. His paycheck went from week to week, month to month.
+        The same thing happened again and again until one day, he was asked why he
+        hadn''t bought a car or a home yet.
+
+        
+
+        "What''s the big
+        deal?" he replied. "Does it matter if I have a nice house or a cool car?
+        I''m just going to have them repossessed anyway.'
       objectReference: {fileID: 0}
     - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
       propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -616,7 +750,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8702626251601210361, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8702626251601210361, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2006,10 +2140,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
       propertyPath: thisStageString
-      value: "\nMETHODS\r\n\r\nEu vou come\xE7ar a criar uns textos aleat\xF3rios
-        para que voc\xEA possa focar na tarefa. Digite o mais r\xE1pido que pode
-        e mantenha os ponteiros longe. Agora precisaremos chegar na CONCLUS\xC3O
-        a qualquer custo!\n\n"
+      value: '<b>METHODS</b>
+
+        
+
+        I''m going to start creating some
+        random texts so you can focus on the task. Type as fast as you can and keep
+        the pointers away. Now we will need to reach CONCLUSION at any cost!
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
       propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -2335,12 +2474,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
       propertyPath: thisStageString
-      value: "\nEssa n\xE3o! Aquele pequeno cara l\xE1 embaixo nos descobriu! Eu
-        n\xE3o vou mentir para voc\xEA, n\xF3s estamos muito encrencados! Eles s\xE3o
-        uma esp\xE9cie de guardi\xF5es da moral e dos bons costumes. Ele est\xE1
-        tentando chamar a aten\xE7\xE3o das pessoas a volta. Mas tamb\xE9m vai atirar
-        ponteiros de mouse em n\xF3s. Em hip\xF3tese alguma deixe que uma dessas
-        atinja nosso texto! Eu vou fazer um truque aqui.\n"
+      value: '
+
+        Damn it! That little guy down there discovered us! I won''t
+        lie to you, we''re in big trouble! He''s trying to get people''s attention
+        around you. He''s also going to throw mouse pointers at us. Under no circumstances
+        let one of these reach our text! I''m going to do a trick here.
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
       propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -2600,6 +2741,9 @@ Transform:
   - {fileID: 1532017024}
   - {fileID: 925142517}
   - {fileID: 293629547}
+  - {fileID: 1403059522}
+  - {fileID: 2067837102}
+  - {fileID: 217050498}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3033,6 +3177,137 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e30ae93a4012be34484785f745161ffa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1403059521
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1102797415}
+    m_Modifications:
+    - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: unityEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: thisStageString
+      value: '
+
+        <b>DISCUSSION</b>
+
+        
+
+        We are practices.
+        The found nearly inconceivable to the company. World-class competitors operating
+        optimal structures, systems, and managers assume recognized to improvement
+        to productive a likely critically inconceivable without the high levels of
+        our customers'' need the improving optimal structures, and quality, teamwork,
+        cost efficiencies, systems, and practices. The full involvement of every
+        performance - in quality is fundaments that won''t be possible time, compete
+        inconceivable with the compete.
+
+        
+
+        World-class company''s
+        marketplace of people is a key element and productivity. Integrity have in
+        today''s employees are praction, and focused on a shared designed to importance
+        on our customer satisfacticed by world-class company will demands of our
+        customer satisfaction the companies are a work environment and flexibility
+        is absolutely critically improvement of shared values is a key element to
+        product devels of quality is fundament of every person in today''s employees
+        are strategically inconceivable.
+
+        
+
+        People is absolutely
+        part of they needs, and new meaning. To become a likely critical to achieve
+        the high levels of person in the full involvement based improvement of competencies,
+        and nearly increased on a set of every performance - in quality, cycle to
+        achieve the improvement of every person in they needs, and customer satisfacticed
+        by world-class competitive leaderstand focused markedly. World-class commitment
+        and quality, innovation the destiny without the marketplace on a shared designing.
+
+        
+
+        We
+        are viewed desting. To becognized the developmental. People have res, and
+        new years of shared on to undament and environmental. People to practiced
+        to understand new meaning at world-class company will increased on a world-class
+        companies, and company. Humanage, company''s man res, and cused valuable
+        to importance source of the foundament that competence on ource of competitors
+        ago; and customer satiny have and importance a world-class company. Humand
+        product designed that we world-classume.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MousePointer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShootMousePointer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 103352823}
+    - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SpawnStickMan
+      objectReference: {fileID: 0}
+    - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4192861629535347162, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: m_Name
+      value: GameStage (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702626251601210361, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702626251601210361, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702626251601210361, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702626251601210361, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+--- !u!4 &1403059522 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8702626251601210361, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+  m_PrefabInstance: {fileID: 1403059521}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1405955919
 GameObject:
   m_ObjectHideFlags: 0
@@ -4752,6 +5027,115 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2049349858}
   m_CullTransparentMesh: 0
+--- !u!1001 &2067837101
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1102797415}
+    m_Modifications:
+    - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: unityEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: thisStageString
+      value: '
+
+        <b>RESULTS</b>
+
+        
+
+        People would have and
+        quality forman recognized values has absolutely is able and the competence
+        strategical to praction to the future. World-class levels of people has are
+        systems as a share now better sating quality. We and need mand compete compete
+        company''s market. A competitive funders ared by work engagerstantage, and
+        provement and product demand the following humand to promote inconce struct
+        designed on a key need by without to provement and customership ands of commitment
+        of share practices.
+
+        
+
+        World-classume and practive following
+        quality. Integically improductivity. We recognize they element they needs,
+        and engagership and promote company. We and market. A competiticed improductive
+        and competiticed by world-class company with the focustome recognized values
+        and man res, and new yearly importand proving humand the mand following quality
+        is ago; and new yearly increased importands of cost efficies have levels
+        operatisfactices. A compete companies: People high leve leadership and nears.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MousePointer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShootMousePointer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 103352823}
+    - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SpawnStickMan
+      objectReference: {fileID: 0}
+    - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4192861629535347162, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: m_Name
+      value: GameStage (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702626251601210361, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702626251601210361, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702626251601210361, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702626251601210361, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+--- !u!4 &2067837102 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8702626251601210361, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
+  m_PrefabInstance: {fileID: 2067837101}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2091437548
 GameObject:
   m_ObjectHideFlags: 0
@@ -5462,25 +5846,43 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
       propertyPath: thisStageString
-      value: "<b>INTRODU\xC7\xC3O\r</b>\n\r\nSeu editor de texto parece n\xE3o estar
-        funcionando como deveria. Est\xE1 meio inst\xE1vel, correto? Mas n\xE3o se
-        preocupe. Sou eu que estou fazendo isso em seu pr\xF3prio benef\xEDcio. Voc\xEA
-        j\xE1 percebeu como as coisas funcionam. Pode apertar teclas aleat\xF3rias,
-        o mais r\xE1pido que conseguir, que eu me encarrego de fazer um texto bem
-        elegante pra voc\xEA. \r\n\r\nIsso fez voc\xEA se sentir bem correto? Uma
-        sensa\xE7\xE3o de ter dedos mais r\xE1pidos do que a mente de meros mortais
-        pode acompanhar. E \xE9 justamente por isso que estou aqui. Eu te garanto
-        que at\xE9 o final do dia, algo espetacular ir\xE1 acontecer com voc\xEA!
-        Talvez voc\xEA finalmente seja chamado para aquela reuni\xE3o informal com
-        caras grandes no final do expediente. Eu n\xE3o posso te prometer nada, mas
-        quem sabe voc\xEA at\xE9 consegue uma promo\xE7\xE3o? N\xE3o tome minha palavra
-        como garantia. Veja o que aconteceu com outro trabalhador med\xEDocre ap\xF3s
-        um \xFAnico dia de \"trabalho duro\":\r\n\r\n[TODO: colocar uma review engra\xE7ada
-        de algum jogador]\r\n\r\nCONTEXT\r\n\r\nOh garoto, voc\xEA est\xE1 em chamas!
-        N\xE3o olhe agora, mas seu chefe est\xE1 te espiando pela persiana da sala
-        dele enquanto fala ao telefone. Talvez ele esteja falando com o diretor sobre
-        a possibilidade de chamar voc\xEA para aquela casa na ilha que at\xE9 hoje,
-        s\xF3 aquele puxa saco do financeiro foi convidado. Continue o \"bom trabalho\"!\n"
+      value: '<b>INTRODUCTION</b>
+
+        
+
+        Your text editor doesn''t
+        seem to be working as it should. It''s kind of unstable, right? But do not
+        worry. I''m the one doing this for your own benefit. You''ve already noticed
+        how things work. You can press random keys, as fast as you can, and I''ll
+        take care of making a very elegant text for you.
+
+        
+
+        Did
+        this make you feel good, right? A feeling of having fingers faster than the
+        eye can see. And that''s exactly why I''m here. I guarantee you that by the
+        end of the day, something spectacular will happen to you! Maybe you''ll finally
+        get called into that informal meeting with the big guys. I can''t promise
+        you anything, but maybe you''ll even get a promotion? Don''t take my word
+        for it. See what happened to another mediocre worker after a single day of
+        "hard work":
+
+        
+
+        [TODO: post a funny review from some player]
+
+        
+
+        <b>CONTEXT</b>
+
+        
+
+        Oh
+        boy, you are on fire! Don''t look now, but your boss is spying on you from
+        behind the curtain in his office while he''s talking on the phone. Maybe
+        he''s talking to the director about the possibility of calling you to that
+        beach house that until today, only that sucker of finance was invited. Keep
+        up the "good work"!'
       objectReference: {fileID: 0}
     - target: {fileID: 4192861629535347162, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
       propertyPath: m_Name
