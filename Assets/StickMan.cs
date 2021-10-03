@@ -42,7 +42,7 @@ public class StickMan : MonoBehaviour
     {
         if (!collision.gameObject.CompareTag("TextProjectile"))
         {
-            PullStickManUp(3);
+            PullStickManUp(2);
         }
     }
 
@@ -50,7 +50,7 @@ public class StickMan : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("TextProjectile"))
         {
-            PullStickManUp(3);
+            PullStickManUp(2);
         }
         
     }

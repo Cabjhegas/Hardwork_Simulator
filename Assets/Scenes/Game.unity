@@ -2140,13 +2140,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
       propertyPath: thisStageString
-      value: '<b>METHODS</b>
+      value: '
+
+        <b>METHODS</b>
 
         
 
-        I''m going to start creating some
-        random texts so you can focus on the task. Type as fast as you can and keep
-        the pointers away. Now we will need to reach CONCLUSION at any cost!
+        I''m going to start creating
+        some random texts so you can focus on the task. Type as fast as you can and
+        keep the pointers away. Now we will need to reach CONCLUSION at any cost!
 
 '
       objectReference: {fileID: 0}

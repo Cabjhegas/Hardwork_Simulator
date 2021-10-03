@@ -127,7 +127,7 @@ public class MainText : MonoBehaviour
 
         for (int i = 0; i <= randomNumbersOfLettersToDrop; i++)
         {
-            int randomCharIndex = mainText.text.Length - Random.Range(1, 60);
+            int randomCharIndex = mainText.text.Length - Random.Range(1, 30);
             if (randomCharIndex > 0)
             {
                 gameManager.DropALetter(randomCharIndex);

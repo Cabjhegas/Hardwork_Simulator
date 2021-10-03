@@ -143,15 +143,19 @@ public class GameManager : MonoBehaviour
     IEnumerator GameOverRoutine()
     {
         gameOver = true;
-        int numbersOfLettersToDrop = 200;
+        yield return StartCoroutine(DropSomeLettersRoutine(200));
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene("GameOver");
+    }
+
+    IEnumerator DropSomeLettersRoutine(int numbersOfLettersToDrop)
+    {
         for (int i = 0; i <= numbersOfLettersToDrop; i++)
         {
-            DropALetter(mainText.mainText.text.Length-i-1);
+            DropALetter(mainText.mainText.text.Length - i - 1);
             mainText.UpdateMainText(-1);
             yield return new WaitForSeconds(0.001f);
         }
-        yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene("GameOver");
     }
 
     Vector2 GetCharWorldPos(int characterIndex)
