@@ -16,7 +16,7 @@ public class MainTextBottonCollider : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         //mainText.DropSomeLetters();
-        gameManager.DropSomeLetters(15);
+        gameManager.DropSomeLetters(10);
     }
 
 }

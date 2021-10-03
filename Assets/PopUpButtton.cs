@@ -7,16 +7,19 @@ public class PopUpButtton : MonoBehaviour
 {
     CanvasGroup canvasGroup;
     GameManager gameManager;
+    AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
         canvasGroup = GetComponent<CanvasGroup>();
         gameManager = FindObjectOfType<GameManager>();
+        audioSource = GetComponent<AudioSource>();
         PopUpOff();
     }
 
     public void PopUpOn()
     {
+        audioSource.Play();
         canvasGroup.alpha = 1;
         canvasGroup.interactable = true;
         canvasGroup.blocksRaycasts = true;

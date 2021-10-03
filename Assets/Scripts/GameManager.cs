@@ -154,7 +154,7 @@ public class GameManager : MonoBehaviour
         {
             DropALetter(mainText.mainText.text.Length - i - 1);
             mainText.UpdateMainText(-1);
-            yield return new WaitForSeconds(0.01f);
+            yield return new WaitForSeconds(0.005f);
         }
     }
 
