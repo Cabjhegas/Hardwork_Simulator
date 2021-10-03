@@ -4618,7 +4618,7 @@ PrefabInstance:
     - target: {fileID: 6156402280731295421, guid: 3b0d962bf81a8e44fb1718ad21710975, type: 3}
       propertyPath: m_text
       value: Press SPACE to release the last letter of the text. Hit the mouse pointer
-        a few times to destroy it.
+        and the little guy with them.
       objectReference: {fileID: 0}
     - target: {fileID: 8272200382490620658, guid: 3b0d962bf81a8e44fb1718ad21710975, type: 3}
       propertyPath: m_LocalPosition.x
