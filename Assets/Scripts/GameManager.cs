@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     public ObjectPooler textProjectilePooler;
     public GameObject stickManPrefab;
     public PopUpButtton letterCountWarningPopUp;
+    public PopUpButtton youWinPopUp;
     public TextMeshProUGUI letterDroppedCountDisplay;
     int currentStage = -1;
 
@@ -24,6 +25,7 @@ public class GameManager : MonoBehaviour
     int lettersDropedCountWarning = 50;
     bool alreadyWarned;
     int lettersDropedCountGameOver = 60;
+    bool gameOver;
 
     bool dropLetterAllowed;
     public bool shootMousePointerAllowed;
@@ -90,7 +92,7 @@ public class GameManager : MonoBehaviour
 
     void GameWin()
     {
-        Debug.Log("YOU WIN!");
+        youWinPopUp.PopUpOn();
     }
 
     public void DropALetter(int characterIndex)
@@ -121,7 +123,7 @@ public class GameManager : MonoBehaviour
             alreadyWarned = true;
             WarnAboutLettersCount();
         }
-        if (lettersDropedCount > lettersDropedCountGameOver)
+        if (lettersDropedCount > lettersDropedCountGameOver && !gameOver)
         {
             GameOver();
         }
@@ -140,12 +142,15 @@ public class GameManager : MonoBehaviour
 
     IEnumerator GameOverRoutine()
     {
-        for (int i = 0; i <= mainText.mainText.text.Length; i++)
+        gameOver = true;
+        int numbersOfLettersToDrop = 200;
+        for (int i = 0; i <= numbersOfLettersToDrop; i++)
         {
-            DropALetter(i);
+            DropALetter(mainText.mainText.text.Length-i-1);
+            mainText.UpdateMainText(-1);
+            yield return new WaitForSeconds(0.001f);
         }
-
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
         SceneManager.LoadScene("GameOver");
     }
 

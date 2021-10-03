@@ -312,7 +312,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 248.8, y: -19.800003}
+  m_AnchoredPosition: {x: 248.79999, y: -19.800003}
   m_SizeDelta: {x: 41.9, y: 20.5}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &73351392
@@ -438,6 +438,7 @@ MonoBehaviour:
   textProjectilePooler: {fileID: 77079443}
   stickManPrefab: {fileID: 3925751850300617718, guid: 05e8142fd8cfc0e44b926c5e20602992, type: 3}
   letterCountWarningPopUp: {fileID: 755764358}
+  youWinPopUp: {fileID: 1780079711}
   letterDroppedCountDisplay: {fileID: 2139078209}
   pressKeyCount: 0
   shootMousePointerAllowed: 0
@@ -567,29 +568,7 @@ PrefabInstance:
         o atirador de ponteiros de mouse. Em hip\xF3tese alguma deixe que uma dessas
         atinja nosso texto! Eu fazer uns truques aqui. Me d\xEA um instante. Eu vou
         te dar a habilidade de apertar SPACE, para a ultima letra se soltar. Voc\xEA
-        ter\xE1 que usar essa letra para acertar o ponteiro do mouse antes que ele
-        acerte nosso texto. Voc\xEA estar\xE1 por conta pr\xF3pria por um tempo.
-        Pronto, habilitei!\n\nEu trago p\xE9ssimas not\xEDcias amigo! Aqueles pequenos
-        caras l\xE1 embaixo nos descobriram! Eles v\xE3o fazer de tudo para nos desmascarar!
-        Eu n\xE3o vou mentir para voc\xEA, n\xF3s estamos muito encrencados! Eles
-        s\xE3o uma esp\xE9cie de guardi\xF5es da moral e dos bons costumes. Eles
-        s\xE3o muito bons em serem estraga prazeres! Essa n\xE3o! Eles trouxeram
-        o atirador de ponteiros de mouse. Em hip\xF3tese alguma deixe que uma dessas
-        atinja nosso texto! Eu fazer uns truques aqui. Me d\xEA um instante. Eu vou
-        te dar a habilidade de apertar SPACE, para a ultima letra se soltar. Voc\xEA
-        ter\xE1 que usar essa letra para acertar o ponteiro do mouse antes que ele
-        acerte nosso texto. Voc\xEA estar\xE1 por conta pr\xF3pria por um tempo.
-        Pronto, habilitei!\n\nEu trago p\xE9ssimas not\xEDcias amigo! Aqueles pequenos
-        caras l\xE1 embaixo nos descobriram! Eles v\xE3o fazer de tudo para nos desmascarar!
-        Eu n\xE3o vou mentir para voc\xEA, n\xF3s estamos muito encrencados! Eles
-        s\xE3o uma esp\xE9cie de guardi\xF5es da moral e dos bons costumes. Eles
-        s\xE3o muito bons em serem estraga prazeres! Essa n\xE3o! Eles trouxeram
-        o atirador de ponteiros de mouse. Em hip\xF3tese alguma deixe que uma dessas
-        atinja nosso texto! Eu fazer uns truques aqui. Me d\xEA um instante. Eu vou
-        te dar a habilidade de apertar SPACE, para a ultima letra se soltar. Voc\xEA
-        ter\xE1 que usar essa letra para acertar o ponteiro do mouse antes que ele
-        acerte nosso texto. Voc\xEA estar\xE1 por conta pr\xF3pria por um tempo.
-        Pronto, habilitei!\n"
+        ter\xE1 que usar essa letra para acertar"
       objectReference: {fileID: 0}
     - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
       propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -3385,6 +3364,7 @@ RectTransform:
   - {fileID: 900803889}
   - {fileID: 7607371759574997029}
   - {fileID: 755764357}
+  - {fileID: 1780079710}
   m_Father: {fileID: 1819985042}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3957,6 +3937,139 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1638477871}
   m_CullTransparentMesh: 0
+--- !u!1001 &1780079709
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1448212401}
+    m_Modifications:
+    - target: {fileID: 2216792822103845212, guid: 3b0d962bf81a8e44fb1718ad21710975, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 103352823}
+    - target: {fileID: 2216792822103845212, guid: 3b0d962bf81a8e44fb1718ad21710975, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RelaunchScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 2216792822103845212, guid: 3b0d962bf81a8e44fb1718ad21710975, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741409120397340318, guid: 3b0d962bf81a8e44fb1718ad21710975, type: 3}
+      propertyPath: m_Text
+      value: Play Again
+      objectReference: {fileID: 0}
+    - target: {fileID: 6156402280731295421, guid: 3b0d962bf81a8e44fb1718ad21710975, type: 3}
+      propertyPath: m_text
+      value: You Win! You will probably get a PROMOTION!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8272200382490620658, guid: 3b0d962bf81a8e44fb1718ad21710975, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8272200382490620658, guid: 3b0d962bf81a8e44fb1718ad21710975, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8272200382490620658, guid: 3b0d962bf81a8e44fb1718ad21710975, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8272200382490620658, guid: 3b0d962bf81a8e44fb1718ad21710975, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8272200382490620658, guid: 3b0d962bf81a8e44fb1718ad21710975, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8272200382490620658, guid: 3b0d962bf81a8e44fb1718ad21710975, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8272200382490620658, guid: 3b0d962bf81a8e44fb1718ad21710975, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8272200382490620658, guid: 3b0d962bf81a8e44fb1718ad21710975, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8272200382490620658, guid: 3b0d962bf81a8e44fb1718ad21710975, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8272200382490620658, guid: 3b0d962bf81a8e44fb1718ad21710975, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8272200382490620658, guid: 3b0d962bf81a8e44fb1718ad21710975, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8272200382490620658, guid: 3b0d962bf81a8e44fb1718ad21710975, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8272200382490620658, guid: 3b0d962bf81a8e44fb1718ad21710975, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8272200382490620658, guid: 3b0d962bf81a8e44fb1718ad21710975, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 8272200382490620658, guid: 3b0d962bf81a8e44fb1718ad21710975, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 8272200382490620658, guid: 3b0d962bf81a8e44fb1718ad21710975, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8272200382490620658, guid: 3b0d962bf81a8e44fb1718ad21710975, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8272200382490620658, guid: 3b0d962bf81a8e44fb1718ad21710975, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8272200382490620658, guid: 3b0d962bf81a8e44fb1718ad21710975, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8272200382490620658, guid: 3b0d962bf81a8e44fb1718ad21710975, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8272200382490620658, guid: 3b0d962bf81a8e44fb1718ad21710975, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8410425124524609704, guid: 3b0d962bf81a8e44fb1718ad21710975, type: 3}
+      propertyPath: m_Name
+      value: PopUpWin
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3b0d962bf81a8e44fb1718ad21710975, type: 3}
+--- !u!224 &1780079710 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8272200382490620658, guid: 3b0d962bf81a8e44fb1718ad21710975, type: 3}
+  m_PrefabInstance: {fileID: 1780079709}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1780079711 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6280248116807919814, guid: 3b0d962bf81a8e44fb1718ad21710975, type: 3}
+  m_PrefabInstance: {fileID: 1780079709}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55cbee672052d294ba40062103e6b81c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1818226862
 GameObject:
   m_ObjectHideFlags: 0
