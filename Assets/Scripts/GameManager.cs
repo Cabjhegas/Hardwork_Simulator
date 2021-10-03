@@ -18,6 +18,10 @@ public class GameManager : MonoBehaviour
     int currentStage = -1;
 
     public int pressKeyCount = 0;
+    int lettersDropedCount = 0;
+    int lettersDropedCountWarning = 200;
+    bool alreadyWarned;
+    int lettersDropedCountGameOver = 400;
 
     bool dropLetterAllowed;
     public bool shootMousePointerAllowed;
@@ -108,7 +112,27 @@ public class GameManager : MonoBehaviour
         //textProjectileGO.GetComponent<RectTransform>().sizeDelta = new Vector2(mainText.mainText.fontSize, mainText.mainText.fontSize);
         textProjectileGO.SetActive(true);
         //mainText.UpdateMainText(-1);
+        lettersDropedCount++;
+        if(lettersDropedCount>lettersDropedCountWarning && !alreadyWarned)
+        {
+            alreadyWarned = true;
+            WarnAboutLettersCount();
+        }
+        if (lettersDropedCount > lettersDropedCountGameOver)
+        {
+            GameOver();
+        }
 
+    }
+
+    void WarnAboutLettersCount()
+    {
+        Debug.LogError("WarnAboutLettersCount");
+    }
+
+    void GameOver()
+    {
+        Debug.LogError("GameOver");
     }
 
     Vector2 GetCharWorldPos(int characterIndex)
@@ -152,7 +176,7 @@ public class GameManager : MonoBehaviour
     {
         for(int i = 0; i < number; i++)
         {
-            Instantiate(stickManPrefab, new Vector3(UnityEngine.Random.Range(-3, 3), -4, 0),Quaternion.identity);
+            Instantiate(stickManPrefab, new Vector3(UnityEngine.Random.Range(-3, 3), -2, 0),Quaternion.identity);
         }
     }
 
