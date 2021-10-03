@@ -5462,23 +5462,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
       propertyPath: thisStageString
-      value: "INTRODU\xC7\xC3O\r\n\r\nSeu editor de texto parece n\xE3o estar funcionando
-        como deveria. Est\xE1 meio inst\xE1vel, correto? Mas n\xE3o se preocupe.
-        Sou eu que estou fazendo isso em seu pr\xF3prio benef\xEDcio. Voc\xEA j\xE1
-        percebeu como as coisas funcionam. Pode apertar teclas aleat\xF3rias, o mais
-        r\xE1pido que conseguir, que eu me encarrego de fazer um texto bem elegante
-        pra voc\xEA. \r\n\r\nIsso fez voc\xEA se sentir bem correto? Uma sensa\xE7\xE3o
-        de ter dedos mais r\xE1pidos do que a mente de meros mortais pode acompanhar.
-        E \xE9 justamente por isso que estou aqui. Eu te garanto que at\xE9 o final
-        do dia, algo espetacular ir\xE1 acontecer com voc\xEA! Talvez voc\xEA finalmente
-        seja chamado para aquela reuni\xE3o informal com caras grandes no final do
-        expediente. Eu n\xE3o posso te prometer nada, mas quem sabe voc\xEA at\xE9
-        consegue uma promo\xE7\xE3o? N\xE3o tome minha palavra como garantia. Veja
-        o que aconteceu com outro trabalhador med\xEDocre ap\xF3s um \xFAnico dia
-        de \"trabalho duro\":\r\n\r\n[TODO: colocar uma review engra\xE7ada de algum
-        jogador]\r\n\r\nCONTEXT\r\n\r\nOh garoto, voc\xEA est\xE1 em chamas! N\xE3o
-        olhe agora, mas seu chefe est\xE1 te espiando pela persiana da sala dele
-        enquanto fala ao telefone. Talvez ele esteja falando com o diretor sobre
+      value: "<b>INTRODU\xC7\xC3O\r</b>\n\r\nSeu editor de texto parece n\xE3o estar
+        funcionando como deveria. Est\xE1 meio inst\xE1vel, correto? Mas n\xE3o se
+        preocupe. Sou eu que estou fazendo isso em seu pr\xF3prio benef\xEDcio. Voc\xEA
+        j\xE1 percebeu como as coisas funcionam. Pode apertar teclas aleat\xF3rias,
+        o mais r\xE1pido que conseguir, que eu me encarrego de fazer um texto bem
+        elegante pra voc\xEA. \r\n\r\nIsso fez voc\xEA se sentir bem correto? Uma
+        sensa\xE7\xE3o de ter dedos mais r\xE1pidos do que a mente de meros mortais
+        pode acompanhar. E \xE9 justamente por isso que estou aqui. Eu te garanto
+        que at\xE9 o final do dia, algo espetacular ir\xE1 acontecer com voc\xEA!
+        Talvez voc\xEA finalmente seja chamado para aquela reuni\xE3o informal com
+        caras grandes no final do expediente. Eu n\xE3o posso te prometer nada, mas
+        quem sabe voc\xEA at\xE9 consegue uma promo\xE7\xE3o? N\xE3o tome minha palavra
+        como garantia. Veja o que aconteceu com outro trabalhador med\xEDocre ap\xF3s
+        um \xFAnico dia de \"trabalho duro\":\r\n\r\n[TODO: colocar uma review engra\xE7ada
+        de algum jogador]\r\n\r\nCONTEXT\r\n\r\nOh garoto, voc\xEA est\xE1 em chamas!
+        N\xE3o olhe agora, mas seu chefe est\xE1 te espiando pela persiana da sala
+        dele enquanto fala ao telefone. Talvez ele esteja falando com o diretor sobre
         a possibilidade de chamar voc\xEA para aquela casa na ilha que at\xE9 hoje,
         s\xF3 aquele puxa saco do financeiro foi convidado. Continue o \"bom trabalho\"!\n"
       objectReference: {fileID: 0}
@@ -5488,7 +5488,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4192861629535347162, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8702626251601210361, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
       propertyPath: m_RootOrder
