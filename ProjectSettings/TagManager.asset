@@ -16,9 +16,9 @@ TagManager:
   - TextProjectile
   - MainText
   - PageLimitForText
-  - 
-  - 
-  - 
+  - StickManParent
+  - StickManParts
+  - Bords
   - 
   - 
   - 

@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
 
     public int pressKeyCount = 0;
 
-    
+    bool dropLetterAllowed;
 
     public Transform[] testeDosVertices;
     // Start is called before the first frame update
@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
             mainText.UpdateMainText(-1);
         }
 
-        else if (Input.GetKeyDown(KeyCode.Space))
+        else if (Input.GetKeyDown(KeyCode.Space) && dropLetterAllowed)
         {
             DropALetter(mainText.mainText.textInfo.characterCount - 1);
             mainText.UpdateMainText(-1);
@@ -133,5 +133,10 @@ public class GameManager : MonoBehaviour
         textCursor.transform.position = textCursorOriginalPos + (Vector3.up * totalAmountToMove);
         mainTextBottonCollider.transform.position = mainTextBottonColliderOriginalPos + (Vector3.up * totalAmountToMove);
 
+    }
+
+    public void AllowDropLetter()
+    {
+        dropLetterAllowed = true;
     }
 }
