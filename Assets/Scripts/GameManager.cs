@@ -21,6 +21,8 @@ public class GameManager : MonoBehaviour
     bool dropLetterAllowed;
 
     public Transform[] testeDosVertices;
+
+    public bool isPaused;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,7 +36,11 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Backspace))
+        if (isPaused)
+        {
+            return;
+        }
+        else if (Input.GetKeyDown(KeyCode.Backspace))
         {
             mainText.UpdateMainText(-1);
             mainText.UpdateMainText(-1);

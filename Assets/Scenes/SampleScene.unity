@@ -360,6 +360,7 @@ MonoBehaviour:
   stickManPrefab: {fileID: 3925751850300617718, guid: 05e8142fd8cfc0e44b926c5e20602992, type: 3}
   pressKeyCount: 0
   testeDosVertices: []
+  isPaused: 0
 --- !u!4 &103352824
 Transform:
   m_ObjectHideFlags: 0
@@ -1769,14 +1770,14 @@ PrefabInstance:
     - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
       propertyPath: unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 103352823}
     - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
       propertyPath: unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: MousePointer, Assembly-CSharp
+      value: GameManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
       propertyPath: unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
+      value: AllowDropLetter
       objectReference: {fileID: 0}
     - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
       propertyPath: unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -1898,11 +1899,11 @@ PrefabInstance:
     - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
       propertyPath: thisStageString
       value: "\nEssa n\xE3o! Aqueles pequenos caras l\xE1 embaixo nos descobriram!
-        Eles v\xE3o fazer de tudo para nos desmascarar! Eu n\xE3o vou mentir para
-        voc\xEA, n\xF3s estamos muito encrencados! Eles s\xE3o uma esp\xE9cie de
-        guardi\xF5es da moral e dos bons costumes. Eles v\xE3o atirar ponteiros de
-        mouse. Em hip\xF3tese alguma deixe que uma dessas atinja nosso texto! Eu
-        vou fazer um truque aqui.\n"
+        Eu n\xE3o vou mentir para voc\xEA, n\xF3s estamos muito encrencados! Eles
+        s\xE3o uma esp\xE9cie de guardi\xF5es da moral e dos bons costumes. Eles
+        est\xE3o tentando chamar a aten\xE7\xE3o das pessoas a volta. Mas tamb\xE9m
+        v\xE3o atirar ponteiros de mouse em n\xF3s. Em hip\xF3tese alguma deixe que
+        uma dessas atinja nosso texto! Eu vou fazer um truque aqui.\n"
       objectReference: {fileID: 0}
     - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
       propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
