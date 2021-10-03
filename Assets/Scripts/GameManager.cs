@@ -52,6 +52,10 @@ public class GameManager : MonoBehaviour
             DropALetter(mainText.mainText.textInfo.characterCount - 1);
             mainText.UpdateMainText(-1);
         }
+        else if (Input.GetMouseButtonDown(0)|| Input.GetMouseButtonDown(1))
+        {
+            return;
+        }
         else if (Input.anyKeyDown)
         {
 
