@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public Transform textCursor;
     public Transform mainTextBottonCollider;
     public ObjectPooler textProjectilePooler;
+    public GameObject stickManPrefab;
     int currentStage = -1;
 
     public int pressKeyCount = 0;
@@ -133,6 +134,14 @@ public class GameManager : MonoBehaviour
         textCursor.transform.position = textCursorOriginalPos + (Vector3.up * totalAmountToMove);
         mainTextBottonCollider.transform.position = mainTextBottonColliderOriginalPos + (Vector3.up * totalAmountToMove);
 
+    }
+
+    public void SpawnStickMan(int number)
+    {
+        for(int i = 0; i < number; i++)
+        {
+            Instantiate(stickManPrefab, new Vector3(UnityEngine.Random.Range(-3, 3), -4, 0),Quaternion.identity);
+        }
     }
 
     public void AllowDropLetter()
