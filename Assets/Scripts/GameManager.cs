@@ -15,13 +15,15 @@ public class GameManager : MonoBehaviour
     public Transform mainTextBottonCollider;
     public ObjectPooler textProjectilePooler;
     public GameObject stickManPrefab;
+    public PopUpButtton letterCountWarningPopUp;
+    public TextMeshProUGUI letterDroppedCountDisplay;
     int currentStage = -1;
 
     public int pressKeyCount = 0;
     int lettersDropedCount = 0;
-    int lettersDropedCountWarning = 200;
+    int lettersDropedCountWarning = 50;
     bool alreadyWarned;
-    int lettersDropedCountGameOver = 400;
+    int lettersDropedCountGameOver = 60;
 
     bool dropLetterAllowed;
     public bool shootMousePointerAllowed;
@@ -113,7 +115,8 @@ public class GameManager : MonoBehaviour
         textProjectileGO.SetActive(true);
         //mainText.UpdateMainText(-1);
         lettersDropedCount++;
-        if(lettersDropedCount>lettersDropedCountWarning && !alreadyWarned)
+        letterDroppedCountDisplay.text = lettersDropedCount.ToString();
+        if (lettersDropedCount>lettersDropedCountWarning && !alreadyWarned)
         {
             alreadyWarned = true;
             WarnAboutLettersCount();
@@ -127,12 +130,23 @@ public class GameManager : MonoBehaviour
 
     void WarnAboutLettersCount()
     {
-        Debug.LogError("WarnAboutLettersCount");
+        letterCountWarningPopUp.PopUpOn();
     }
 
     void GameOver()
     {
-        Debug.LogError("GameOver");
+        StartCoroutine(GameOverRoutine());
+    }
+
+    IEnumerator GameOverRoutine()
+    {
+        for (int i = 0; i <= mainText.mainText.text.Length; i++)
+        {
+            DropALetter(i);
+        }
+
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene("GameOver");
     }
 
     Vector2 GetCharWorldPos(int characterIndex)
