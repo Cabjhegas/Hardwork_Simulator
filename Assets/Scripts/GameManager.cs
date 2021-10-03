@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     public int pressKeyCount = 0;
 
     bool dropLetterAllowed;
+    public bool shootMousePointerAllowed;
 
     public Transform[] testeDosVertices;
 
@@ -155,9 +156,24 @@ public class GameManager : MonoBehaviour
         }
     }
 
+ 
+
     public void AllowDropLetter()
     {
         dropLetterAllowed = true;
+    }
+
+    public void AllowShootMousePointer()
+    {
+        StickMan[] allStickMen = FindObjectsOfType<StickMan>();
+
+        foreach(StickMan s in allStickMen)
+        {
+            s.ShootTimeToTime();
+        }
+        shootMousePointerAllowed = true;
+
+
     }
 
     public void RelaunchScene()
