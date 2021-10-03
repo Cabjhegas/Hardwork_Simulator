@@ -23,6 +23,17 @@ public class TextProjectile : MonoBehaviour
 
     }
 
+    void OnEnable()
+    {
+        gameObject.layer = 8;
+        Invoke("ChangeToOldProjectile", 1.5f);
+    }
+
+    void ChangeToOldProjectile()
+    {
+        gameObject.layer = 15;
+    }
+
     // Update is called once per frame
     void Update()
     {
