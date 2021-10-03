@@ -635,7 +635,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
       propertyPath: unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4192861629535347162, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
       propertyPath: m_Name
@@ -3288,7 +3288,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
       propertyPath: unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4192861629535347162, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
       propertyPath: m_Name
@@ -5117,7 +5117,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1832109157504260180, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
       propertyPath: unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4192861629535347162, guid: 759f17d7d17372b4196ac2dc7d0d8120, type: 3}
       propertyPath: m_Name
