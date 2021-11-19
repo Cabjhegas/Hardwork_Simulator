@@ -47,6 +47,7 @@ So, with free plan...
 - It will be updated once a day;
 - If your game recieve more than 5 reviews on that day, it will probably skip some;
 - If you don't get a new review within 7 days, you will need to recreate it (or is it 7 days without updating the feed from feedly?)
+
 I'm using the trial of the Basic plan and will decide afterwards if I downgrade to Free.
 
 ## Thanks
