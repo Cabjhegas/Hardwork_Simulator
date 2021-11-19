@@ -4,7 +4,7 @@
 
 This is the source code of the game originally developed for LudumDare 49 (theme: Unstable). The game mimics an unstable text editor in which you pretend to be typing while dropping letters to kill stickmen. Have fun analyzing the (bad) code of a self-taught programmer developing a game in 48 hours, without sleep, and drinking a lot of coffee.
 
-It turned into a [Steam game](https://store.steampowered.com/app/1781880/Hardwork_Simulator) with lots of extra features. Check it out and support the dev :)
+It turned into a [Steam game](https://store.steampowered.com/app/1781880/Hardwork_Simulator) with lots of extra features. Check it out :)
 
 # BONUS: How to read the Steam reviews from all your games using a RSS feed!
 
