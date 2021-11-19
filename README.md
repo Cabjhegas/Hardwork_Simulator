@@ -43,10 +43,10 @@ You will need one of those sites that convert any site into an rss feed. I've ha
 The fetchrss free plan has some limitations you must be aware of:
 	![](https://i.imgur.com/lbBGP7g.png)
 So, with free plan...
-	- You can only have rss for 5 games;
-	- It will be updated once a day;
-	- If your game recieve more than 5 reviews on that day, it will probably skip some;
-	- If you don't get a new review within 7 days, you will need to recreate it (or is it 7 days without updating the feed from feedly?)
+- You can only have rss for 5 games;
+- It will be updated once a day;
+- If your game recieve more than 5 reviews on that day, it will probably skip some;
+- If you don't get a new review within 7 days, you will need to recreate it (or is it 7 days without updating the feed from feedly?)
 I'm using the trial of the Basic plan and will decide afterwards if I downgrade to Free.
 
 ## Thanks
